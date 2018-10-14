@@ -1,16 +1,15 @@
 import React from "react";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import styled from "styled-components";
-
-const ResumeBlockContainer = styled.div`
+const BlogBlockContainer = styled.div`
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   display: table;
   width: 100%;
   height: 5rem;
-  transition: all 0.5s;
   z-index: 2;
+  transition: all 0.5s;
 
   @media (min-width: 800px) {
     position: absolute;
@@ -19,10 +18,10 @@ const ResumeBlockContainer = styled.div`
     width: 400px;
     height: 380px;
     transform: rotate(-34deg);
-    left: 331px;
-    top: -230px;
-    transition: all 0.5s;
+    left: 755px;
+    top: 399px;
     z-index: 2;
+    transition: all 0.5s;
     &:hover {
       border: 15px solid rgba(255, 255, 255, 0.1);
     }
@@ -37,7 +36,7 @@ const Name = styled.div`
   @media (min-width: 800px) {
     display: table-cell;
     vertical-align: middle;
-    padding: 250px 0px 0px 150px;
+    padding: 0px 0px 050px 160px;
     transform: rotate(34deg);
   }
 `;
@@ -47,7 +46,7 @@ const H2 = styled.h2`
   color: white;
 
   ::before {
-    content: "01";
+    content: "04";
     font-size: 15px;
     position: absolute;
     top: 6px;
@@ -58,22 +57,22 @@ const H2 = styled.h2`
     font-size: 30px;
 
     ::before {
-      top: 280px;
-      left: 128px;
+      top: 130px;
+      left: 135px;
     }
   }
 `;
 
-const ResumeBlock = () => {
+const BlogBlock = () => {
   return (
-    <Link to="/resume">
-      <ResumeBlockContainer>
+    <Link to="/blog">
+      <BlogBlockContainer>
         <Name>
-          <H2>Resume</H2>
+          <H2>Blog</H2>
         </Name>
-      </ResumeBlockContainer>
+      </BlogBlockContainer>
     </Link>
   );
 };
 
-export default ResumeBlock;
+export default BlogBlock;

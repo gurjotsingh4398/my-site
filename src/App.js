@@ -1,14 +1,17 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import CentralStore from "./Store/store";
-import Main from "./Components/Main/Main";
+import LinkComp from "./Components/Links/Links";
 
 class App extends Component {
   render() {
     return (
-      <CentralStore>
-        <Main />
-      </CentralStore>
+      <Router>
+        <CentralStore>
+          <LinkComp />
+        </CentralStore>
+      </Router>
     );
   }
 }

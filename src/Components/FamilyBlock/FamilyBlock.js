@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import styled from "styled-components";
 
-const ResumeBlockContainer = styled.div`
+const FamilyBlockContainer = styled.div`
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   display: table;
@@ -19,8 +18,8 @@ const ResumeBlockContainer = styled.div`
     width: 400px;
     height: 380px;
     transform: rotate(-34deg);
-    left: 331px;
-    top: -230px;
+    left: 1086px;
+    top: 175px;
     transition: all 0.5s;
     z-index: 2;
     &:hover {
@@ -37,7 +36,7 @@ const Name = styled.div`
   @media (min-width: 800px) {
     display: table-cell;
     vertical-align: middle;
-    padding: 250px 0px 0px 150px;
+    padding: 0px 0px 0px 100px;
     transform: rotate(34deg);
   }
 `;
@@ -47,7 +46,7 @@ const H2 = styled.h2`
   color: white;
 
   ::before {
-    content: "01";
+    content: "06";
     font-size: 15px;
     position: absolute;
     top: 6px;
@@ -58,22 +57,22 @@ const H2 = styled.h2`
     font-size: 30px;
 
     ::before {
-      top: 280px;
-      left: 128px;
+      top: 154px;
+      left: 77px;
     }
   }
 `;
 
-const ResumeBlock = () => {
+const FamilyBlock = () => {
   return (
-    <Link to="/resume">
-      <ResumeBlockContainer>
+    <Link to="/family">
+      <FamilyBlockContainer>
         <Name>
-          <H2>Resume</H2>
+          <H2>Family</H2>
         </Name>
-      </ResumeBlockContainer>
+      </FamilyBlockContainer>
     </Link>
   );
 };
 
-export default ResumeBlock;
+export default FamilyBlock;
