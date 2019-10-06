@@ -1,5 +1,5 @@
-#GURJOT SINGH PROFILE
-##Web Developer
+# GURJOT SINGH's PROFILE
+*Web Developer*
 
 This project was bootstrapped with [Create React App]
 
