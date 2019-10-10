@@ -1,5 +1,7 @@
+# GURJOT SINGH's PROFILE
 
-# Portfolio website first page design
+## Portfolio website first page design
+*Web Developer*
 
 This project was bootstrapped with [Create React App]
 
